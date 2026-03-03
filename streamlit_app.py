@@ -64,8 +64,8 @@ st.title("🏏 AI Cricket Player Performance System")
 # ----------------------------------------------------------
 @st.cache_data
 def load_data():
-    batsman_df = pd.read_csv("data/processed/batsman_model_data.csv")
-    bowler_df = pd.read_csv("data/processed/bowler_model_data.csv")
+    batsman_df = pd.read_csv("batsman_model_data.csv")
+    bowler_df = pd.read_csv("bowler_model_data.csv")
     return batsman_df, bowler_df
 
 batsman_df, bowler_df = load_data()
