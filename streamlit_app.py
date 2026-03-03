@@ -75,11 +75,11 @@ batsman_df, bowler_df = load_data()
 # ----------------------------------------------------------
 @st.cache_resource
 def load_models():
-    runs_model = joblib.load("model/xgb_batsman_model.joblib")
-    runs_pipeline = joblib.load("model/feature_pipeline_batsman.pkl")
+    runs_model = joblib.load("xgb_batsman_model.joblib")
+    runs_pipeline = joblib.load("feature_pipeline_batsman.pkl")
 
-    wickets_model = joblib.load("model/rf_wickets_model.joblib")
-    wickets_pipeline = joblib.load("model/feature_pipeline_bowler.pkl")
+    wickets_model = joblib.load("rf_wickets_model.joblib")
+    wickets_pipeline = joblib.load("feature_pipeline_bowler.pkl")
 
     return runs_model, runs_pipeline, wickets_model, wickets_pipeline
 
